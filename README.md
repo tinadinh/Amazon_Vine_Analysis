@@ -1,9 +1,7 @@
 # Amazon_Vine_Analysis
 
 ## Overview of the analysis: Explain the purpose of this analysis.
-This project analyzes Amazon reviews of products in the category "Shoes" written by members of the paid Amazon Vine program. We use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, we use PySpark to determine if there is any bias toward favorable reviews from Vine members the dataset.
-
-The purpose of this project was to conduct an analysis on a dataset that contains reviews of a specific product, in this case, shoes from Amazon. The dataset contains information regarding shoe reviews conducted on amazon by members of the paid Amazon Vine program, which provides members with the product so they are required to publish a review. The dataset that was provided by Amazon contains all information pertaining to the product reviews such as customer info, product info, review text, review date, etc. The dataset was extracted and transformed, connected to an AWS RDS instance, and loaded into pgAdmin for analysis. Pandas was also used to determine if there were any bias towards favorable reviews from the Vine members throughout the dataset.
+The purpose of this analysis is to conduct an analysis on a dataset that contains reviews of a specific product, in this case, shoes from Amazon. The dataset contains information regarding Amazon reviews (such as customer info, product info, review text, review date, etc.) written by members of the paid Amazon Vine program. We use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin for anaylsis. Next, we use PySpark to determine if there is any bias toward favourable reviews from Vine members throughout dataset.
 
 ## Resources
 - Data Sources: amazon_reviews_us_Shoes_v1_00.tsv
@@ -14,11 +12,8 @@ The purpose of this project was to conduct an analysis on a dataset that contain
 - For 5-star reviews, there were 13 Vine reviews and 14,475 non-Vine reviews
 - The percentage of 5 star reviews, 59% were Vine reviews and 54% were non-Vine reviews
 
-This dataframe shows the top 20 rows of the vine_table that was created and exported from pgAdmin 4 and read into a dataframe using Pandas.
+This dataframe is the top 20 rows of the vine_table
 ![table](https://user-images.githubusercontent.com/33900637/158006051-268e2845-00b0-4ac1-89a2-9a21a1ab7d3e.png)
-
-This dataframe is the total votes greater than 20
-![table2](https://user-images.githubusercontent.com/33900637/158006300-312cc7ee-cdf6-4d4f-8c8e-22359d02992e.png)
 
 ## Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
 As shown in the above tables, the percentages of 5-star reviews for the paid and unpaid types are 59.1% and 53.6%, respectively. The 5-star reviews account for a slightly higher percentage of all paid reviews than they do in the unpaid group. However, this difference is not significant considering the difference in size of 2 groups. Therefore, there is no significant bias for reviews for shoes products in the Vine program.
