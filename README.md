@@ -1,6 +1,6 @@
 # Amazon_Vine_Analysis
 
-## Overview of the analysis: Explain the purpose of this analysis.
+## Overview 
 The purpose of this analysis is to conduct an analysis on a dataset that contains reviews of a specific product, in this case, shoes from Amazon. The dataset contains information regarding Amazon reviews (such as customer info, product info, review text, review date, etc.) written by members of the paid Amazon Vine program. We use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin for anaylsis. Next, we use PySpark to determine if there is any bias toward favourable reviews from Vine members throughout dataset.
 
 ## Resources
